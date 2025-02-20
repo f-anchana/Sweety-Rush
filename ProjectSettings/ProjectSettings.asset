@@ -734,13 +734,9 @@ PlayerSettings:
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
   cloudServicesEnabled:
-<<<<<<< HEAD
     Purchasing: 0
     UNet: 1
     Unity Ads: 0
-=======
-    UNet: 1
->>>>>>> b15f0eff5d8b9b3a8e617f1bd386a4fdecff78ad
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -758,11 +754,7 @@ PlayerSettings:
   hmiLogStartupTiming: 0
   hmiCpuConfiguration: 
   apiCompatibilityLevel: 6
-<<<<<<< HEAD
   activeInputHandler: 2
-=======
-  activeInputHandler: 0
->>>>>>> b15f0eff5d8b9b3a8e617f1bd386a4fdecff78ad
   windowsGamepadBackendHint: 0
   cloudProjectId: 45acf2e8-9241-42b9-ade6-1805c0b34e9f
   framebufferDepthMemorylessMode: 0
