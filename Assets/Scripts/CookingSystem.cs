@@ -29,7 +29,7 @@ public class CookingSystem : MonoBehaviour
                     // Lancer la cuisson
                     Debug.Log($" L’ingrédient {selectedObject.name} est mis dans le four !");
                     StartCoroutine(CookIngredient(selectedObject, hit.collider.gameObject));
-                    selectedObject = null; // Réinitialise la sélection
+                    selectedObject = null;
                 }
             }
         }
@@ -41,16 +41,16 @@ public class CookingSystem : MonoBehaviour
         ingredient.SetActive(false);
         Debug.Log("⏳ Cuisson en cours...");
 
-        // Attendre 3 secondes (avec logs à chaque seconde)
+        // Wait for 3 secs
         for (int i = 3; i > 0; i--)
         {
             Debug.Log($"⌛ Temps restant : {i} sec");
             yield return new WaitForSeconds(1f);
         }
 
-        // Créer l’objet cuit (ex: sphère)
+        // Create the cooked object (CakeCuit = sphere)
         GameObject cookedObject = Instantiate(cookedPrefab, spawnPoint.position, Quaternion.identity);
-        cookedObject.GetComponent<Renderer>().material.color = Color.magenta; // Coloré en rose
+        cookedObject.GetComponent<Renderer>().material.color = Color.magenta;
         Debug.Log("✅ Cuisson terminée ! L’objet cuit est apparu !");
     }
 }
