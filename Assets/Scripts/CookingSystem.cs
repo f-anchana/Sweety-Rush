@@ -39,18 +39,18 @@ public class CookingSystem : MonoBehaviour
     {
         //the ingredient disappears and it looks like it's in the oven
         ingredient.SetActive(false);
-        Debug.Log("⏳ Cuisson en cours...");
+        Debug.Log("Cuisson en cours...");
 
         // Wait for 3 secs
         for (int i = 3; i > 0; i--)
         {
-            Debug.Log($"⌛ Temps restant : {i} sec");
+            Debug.Log($"Temps restant : {i} sec");
             yield return new WaitForSeconds(1f);
         }
 
         // Create the cooked object (CakeCuit = sphere)
         GameObject cookedObject = Instantiate(cookedPrefab, spawnPoint.position, Quaternion.identity);
         cookedObject.GetComponent<Renderer>().material.color = Color.magenta;
-        Debug.Log("✅ Cuisson terminée ! L’objet cuit est apparu !");
+        Debug.Log("Cuisson terminée ! L’objet cuit est apparu !");
     }
 }
