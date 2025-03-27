@@ -5,6 +5,7 @@ using UnityEngine;
 public class CookingSystem : MonoBehaviour
 {
     private GameObject selectedObject = null;
+    private const string TAG_INGREDIENT = "Ingredient";
     public GameObject cookedPrefab; // cooked object (here is cakecuit)
     public Transform spawnPoint;
 
@@ -17,16 +18,16 @@ public class CookingSystem : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
-                if (selectedObject == null && hit.collider.CompareTag("Ingredient"))
+                if (selectedObject == null && hit.collider.CompareTag(TAG_INGREDIENT))
                 {
-                    // Sélectionner l’objet (pâte)
+                    // Select the object (here is the dough)
                     selectedObject = hit.collider.gameObject;
                     selectedObject.GetComponent<Renderer>().material.color = Color.white;
                     Debug.Log($" Ingrédient sélectionné : {selectedObject.name}");
                 }
                 else if (selectedObject != null && hit.collider.CompareTag("Four"))
                 {
-                    // Lancer la cuisson
+                    // Start the cooking
                     Debug.Log($" L’ingrédient {selectedObject.name} est mis dans le four !");
                     StartCoroutine(CookIngredient(selectedObject, hit.collider.gameObject));
                     selectedObject = null;
