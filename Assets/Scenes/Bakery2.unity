@@ -4012,6 +4012,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.019874416, y: 0.01987442, z: 0.001151257}
   m_Center: {x: 3.9093818e-13, y: 1.06359116e-10, z: -0.0060279947}
+--- !u!1 &1359082620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1359082621}
+  m_Layer: 0
+  m_Name: ClientSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1359082621
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359082620}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.676785, y: 1.239626, z: 17.82905}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1417090201
 GameObject:
   m_ObjectHideFlags: 0
@@ -6198,5 +6229,6 @@ SceneRoots:
   - {fileID: 6229431482563127371}
   - {fileID: 6674659719828453620}
   - {fileID: 3952311515477154941}
+  - {fileID: 1359082621}
   - {fileID: 127376194167043702}
   - {fileID: 4991935788350319905}
