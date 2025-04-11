@@ -14,11 +14,19 @@ public class GateauInteractif : MonoBehaviour
     private GateauSpawner spawnerOrigine;
     private FourController fourCible = null;
 
-    [Header("Optional animation (like door open)")]
-    public Animator animator;
 
     public enum EtatGateau { Cru, Cuit, Brule }
     public EtatGateau etat = EtatGateau.Cru;
+
+    public GameObject decoPistache;
+    public bool EstSurAssiette { get; set; }
+
+    private void Start()
+    {
+        if (decoPistache != null)
+            decoPistache.SetActive(false);
+    }
+
 
     /// <summary>
     /// Called by the spawner when the cake is created.
@@ -52,11 +60,7 @@ public class GateauInteractif : MonoBehaviour
         );
         offset = transform.position - mouseWorld;
 
-        // Optional: trigger door animation when grabbing cooked cake
-        if (etat == EtatGateau.Cuit && animator != null)
-        {
-            animator.Play("PorteOuverture");
-        }
+
     }
 
     /// <summary>
@@ -159,4 +163,12 @@ public class GateauInteractif : MonoBehaviour
 
     public bool EstCuit() => etat == EtatGateau.Cuit;
     public bool EstBrule() => etat == EtatGateau.Brule;
+
+    public void AppliquerPistache()
+    {
+        if (decoPistache != null)
+            decoPistache.SetActive(true);
+    }
 }
+
+

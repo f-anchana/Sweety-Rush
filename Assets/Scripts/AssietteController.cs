@@ -36,5 +36,9 @@ public class AssietteController : MonoBehaviour
 
         // Disable dragging
         gateau.enabled = false;
+
+        // ✅ Marque comme "posé sur assiette"
+        gateau.EstSurAssiette = true;
     }
+
 }

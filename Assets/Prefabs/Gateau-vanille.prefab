@@ -1526,9 +1526,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4017884020914774147}
-  - {fileID: 8981312676323738199}
   - {fileID: 4265507286353602489}
+  - {fileID: 3369305238371454619}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &2651265950971441635
@@ -1570,7 +1569,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dbbb597772557549ae52cee55d20032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   etat: 0
+  decoPistache: {fileID: 0}
 --- !u!135 &7779977828211859112
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3572,8 +3573,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7642523146851583047}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.8921187, y: 9.775139, z: -33.473366}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3609,7 +3610,7 @@ Transform:
   - {fileID: 7772902761375194316}
   - {fileID: 2301684656500493588}
   - {fileID: 6180735756185447545}
-  m_Father: {fileID: 6241016184234115468}
+  m_Father: {fileID: 3369305238371454619}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7892506339318913610
 GameObject:
@@ -3804,11 +3805,11 @@ Transform:
   m_GameObject: {fileID: 7970841705501843423}
   serializedVersion: 2
   m_LocalRotation: {x: -0.65887886, y: 0.25666836, z: 0.25666836, w: 0.6588789}
-  m_LocalPosition: {x: 0.0048666, y: 0.20575929, z: -0.004470825}
-  m_LocalScale: {x: 51.008984, y: 51.008987, z: 51.008984}
+  m_LocalPosition: {x: -3.887252, y: 9.980898, z: -33.477837}
+  m_LocalScale: {x: 51.00898, y: 51.008987, z: 51.008987}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6241016184234115468}
+  m_Father: {fileID: 3369305238371454619}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7916959821611133292
 MeshFilter:
@@ -4026,6 +4027,39 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &8378328154311310512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3369305238371454619}
+  m_Layer: 0
+  m_Name: DecoPistache
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3369305238371454619
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8378328154311310512}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.8921187, y: -9.775139, z: 33.473366}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8981312676323738199}
+  - {fileID: 4017884020914774147}
+  m_Father: {fileID: 6241016184234115468}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8809290371608169386
 GameObject:
   m_ObjectHideFlags: 0
