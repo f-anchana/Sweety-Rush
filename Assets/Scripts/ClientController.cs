@@ -1,18 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ClientController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Transform pointDestination; // ← C’EST ÇA QUI MANQUAIT
+    public float vitesse = 2f;
+    private Animator anim;
+
+    private void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (pointDestination == null) return;
+
+        Vector3 direction = pointDestination.position - transform.position;
+        direction.y = 0;
+
+        float distance = direction.magnitude;
+
+        if (distance > 0.1f)
+        {
+            transform.position += direction.normalized * vitesse * Time.deltaTime;
+            Quaternion rot = Quaternion.LookRotation(direction);
+            transform.rotation = Quaternion.Slerp(transform.rotation, rot, Time.deltaTime * 5f);
+            anim?.SetFloat("Speed", 1f);
+        }
+        else
+        {
+            anim?.SetFloat("Speed", 0f);
+        }
     }
 }
