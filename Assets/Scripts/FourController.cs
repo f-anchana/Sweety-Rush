@@ -34,7 +34,6 @@ public class FourController : MonoBehaviour
 
     private void Start()
     {
-        if (lumiereFour != null)
             lumiereFour.enabled = false;
     }
 
