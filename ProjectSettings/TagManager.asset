@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Ingredient
   - Four
+  - CinemachineTarget
+  - Plate
+  - Poubelle
+  - Gateau
   layers:
   - Default
   - TransparentFX

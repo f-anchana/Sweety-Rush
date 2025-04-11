@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b7738e2b4590df549b895f4d10aa7bd8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - animator: {instanceID: 0}
+  - lumiereFour: {instanceID: 0}
+  - sonCuisson: {fileID: 8300000, guid: a1b67d94f24df05438509670b0e0ea86, type: 3}
+  - sonBrule: {fileID: 8300000, guid: d6f8b44d513c0ab4b9b5484545519d4f, type: 3}
+  - pointDepotGateau: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
